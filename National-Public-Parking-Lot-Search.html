@@ -273,7 +273,8 @@
                         <li id="PK6" data-order="0"> 
                             <span class="category_bg parking"></span>
                             주차장
-                        </li>      
+                        </li>
+                              
                     </ul>
                 </div>
                 
@@ -299,6 +300,8 @@
                 
                 // 지도에 idle 이벤트를 등록합니다
                 kakao.maps.event.addListener(map, 'idle', searchPlaces);
+
+               
                 
                 // 커스텀 오버레이의 컨텐츠 노드에 css class를 추가합니다 
                 contentNode.className = 'placeinfo_wrap';
@@ -470,6 +473,9 @@
                         el.className = 'on';
                     } 
                 } 
+
+
+
                 </script>
     
             </h2>
