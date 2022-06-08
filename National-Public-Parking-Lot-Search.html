@@ -2,6 +2,7 @@
 
 <head>
     <meta charset="utf-8">
+    
     <style>
     .OUTLINE {
         stroke-linejoin:round;
@@ -62,6 +63,7 @@
         text-align: center;
         position: relative;
         z-index: 1;
+        background: #F0E4D4;
     }
     .first-div {
         font-size: xx-large; 
@@ -88,11 +90,10 @@
         display: flex;
         justify-content: right;
         align-items: center;
-        position: relative;
         font-family: Georgia;
     }
     
-    .map_wrap, .map_wrap * {margin:0; padding:0;font-family:'Malgun Gothic',dotum,'돋움',sans-serif;font-size:12px;}
+    .map_wrap, .third-div * {margin:0; padding:0;font-family:'Malgun Gothic',dotum,'돋움',sans-serif;font-size:12px;}
     .map_wrap {
         position:relative;
         width:100%;
@@ -102,7 +103,7 @@
         position:absolute;
         top:10px;
         left:10px;
-        border-radius: 5px; 
+        border-radius: 50px; 
         border:1px solid #909090;
         box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
         background: #fff;
@@ -112,10 +113,9 @@
     #category li {
         float:left;
         list-style: none;
-        width:50px;
+        width:45px;
         border-right:1px solid #acacac;
-        padding:6px 0;
-        text-align: center; 
+        padding:7px 0; 
         cursor: pointer;
     }
     #category li.on {
@@ -131,14 +131,14 @@
     }
     #category li span {display: block;
         margin:0 auto 3px;
-        width:27px;
-        height: 28px;
+        width:22px;
+        height: 26px;
     }
     #category li .category_bg {
         background:url(https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/places_category.png) no-repeat;
     }
     #category li .parking {
-        background-position: -10px -180px;
+        background-position: -10px 0px;
     }
     #category li.on .category_bg {
         background-position-x:-46px;
@@ -215,7 +215,7 @@
             </h1>
         
             <h2 class="second-div">
-                <svg style='background:#b1b1b1;overflow:visible' height="800" width="650" xmlns="http://www.w3.org/2000/svg" viewbox= "-95 20 900 800">
+                <svg style='background:#F9D9CA;overflow:visible' height="800" width="650" xmlns="http://www.w3.org/2000/svg" viewbox= "-95 20 900 800">
                     <defs>
                         <filter id="dropshadow">
                             <feGaussianBlur in="SourceAlpha" stdDeviation="3" />
@@ -272,7 +272,6 @@
                     <ul id="category">
                         <li id="PK6" data-order="0"> 
                             <span class="category_bg parking"></span>
-                            주차장
                         </li>
                               
                     </ul>
